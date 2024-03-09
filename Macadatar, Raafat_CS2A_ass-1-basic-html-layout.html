@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Raafat Macadatar</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header, nav, footer {
+            flex: 0 0 10vh;
+            background: rgb(2, 230, 32);
+            border: solid 1px rgb(0, 0, 0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-style: oblique;
+            font-weight: bold;
+        }
+        .container {
+            flex: 1;
+            display: flex;
+            
+        }
+        .side {
+            flex: 1;
+            border: solid 10px black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgb(0, 60, 78);
+            padding: 10px; 
+            color: rgb(255, 255, 255); /* Change the font color */
+            
+        }
+        main.side {
+            flex: 3; /* Adjust the flex value as needed */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgb(8, 3, 0);
+        }
+        main.side div {
+            text-align: center;
+            padding: 2rem;
+            width: 80%; /* Adjust the width as needed */
+            margin: 0 auto; /* Center the content */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <H1 style="font-size:3rem;">Header</H1>
+    </header>
+    <nav>
+        <H1 style="font-size:3rem;">Navigation</H1>
+    </nav>
+    <div class="container">
+        <div class="side">
+            <H1 style="font-size:3rem;">Side Content</H1>
+        </div>
+
+        <main class="side">
+            <div>
+                <H1 style="font-size:3rem;">Main Content</H1>
+            </div>
+        </main>
+
+        <div class="side">
+            <H1 style="font-size:3rem;">Side Content</H1>
+        </div>
+    </div>
+    <footer>
+        <H1 style="font-size:3rem;">Footer</H1>
+    </footer>
+</body>
+</html>
